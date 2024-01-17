@@ -1,2 +1,3 @@
-# data-structs-and-algo
+# DSA
+
 Code for data structures and algorithms.
