@@ -8,8 +8,8 @@
  *
  * 	    Using STL for QuickSelect.
  *
- * Time complexity : O(n) 
- * Space complexity: theta(1)
+ * 	    Time complexity : O(n) 
+ * 	    Space complexity: theta(1)
  */
 
 #include<bits/stdc++.h>
