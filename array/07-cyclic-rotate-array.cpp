@@ -7,9 +7,8 @@
  * 	    Reverse from 0 to n-d-1
  *	    Reverse from 0 to n-1
  *	    
- *	    Time complexity : theta(n)
- *	    Space complexity: theta(1)
- *
+ * 	    Time complexity : theta(n)
+ * 	    Space complexity: theta(1)
  */
 
 #include<bits/stdc++.h>

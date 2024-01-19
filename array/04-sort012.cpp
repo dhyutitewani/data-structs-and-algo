@@ -13,8 +13,8 @@
  *	    If mid = 1, incriment mid.
  *	    If mid = 2, swap mid and high, & decriment mid and high.
  *
- *	    Time complexity : O(n)
- *	    Space complexity: O(1)
+ * Time complexity : O(n)
+ * Space complexity: O(1)
  */
 
 #include<bits/stdc++.h>
