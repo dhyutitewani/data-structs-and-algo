@@ -10,12 +10,12 @@
  *	    Find intersection: Use find to identify same elements.
  *	    
  *	    For union of vectors:
- *	    - Time complexity : O(m+n) // Will it be O(2n) or O(m+n)? 
- *	    - Space complexity: O(m+n) // To be checked
+ *	    - Time complexity : O(m+n) // to be checked
+ *	    - Space complexity: O(m+n) // to be checked
  *
  *	    For intersection of vectors:
- *	    - Time complexity : theta(n^2) // To be checked
- *	    - Space complexity: O(m+n) // To be checked
+ *	    - Time complexity : theta(n^2) // to be checked
+ *	    - Space complexity: O(m+n) // to be checked
  * 
  * Use STL for sort.
  */
@@ -39,8 +39,8 @@ int main()
 	
 	// union
 	c.insert(c.end(), b.begin(), b.end());
-	for (int i : c)
-        	cout << i << " ";
+	for (int &i : c)						 // i (&i) is a reference to elem in arr c
+        	cout << i << " ";				 // using only i would mean, i is copy of elem 
     	cout << "\n";
 	
 	// intersection
@@ -48,7 +48,7 @@ int main()
 		if (find(b.begin(), b.end(), j) != b.end())
 			d.push_back(j);
 	
-	for (int i : d)
+	for (int &i : d)
         	cout << i << " ";
     	cout << "\n";
 
