@@ -40,7 +40,7 @@ int main()
 	// union
 	c.insert(c.end(), b.begin(), b.end());
 	for (int &i : c)				         // i (&i) is a reference to elem in arr c
-        	cout << i << " ";				 // using only i would mean, i is copy of elem 
+        	cout << i << " ";				 // using only i would mean i is copy of elem 
     	cout << "\n";
 	
 	// intersection
