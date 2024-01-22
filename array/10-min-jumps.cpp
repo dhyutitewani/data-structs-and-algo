@@ -19,7 +19,7 @@
  *		Space complexity: ? // to be calculated
  */
 
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 int minJumps(int*, int);
@@ -37,13 +37,13 @@ int main()
 int minJumps(int *a, int n)
 {
 	if (n <= 1)
-		return 0;					// already at end or no elem
+		return 0;				// already at end or no elem
 	
 	if (n - 1 <= a[0])
-		return 1;				    // only 1 jump needed	
+		return 1;				// only 1 jump needed	
 
 	if (a[0] == 0)
-		return -1;					// no jump possible
+		return -1;				// no jump possible
 
 	int maxReach = a[0], step = a[0], jump = 1;
 
@@ -52,7 +52,7 @@ int minJumps(int *a, int n)
 		if (i == n - 1)
 			return jump;			// if on last elem
 
-		if ((n - 1) - i <= a[i])	// check if curr elem garuntees 
+		if ((n - 1) - i <= a[i])		// check if curr elem garuntees 
 			return jump + 1;	 	// jump to last elem
 		
 		maxReach = max(maxReach, i + a[i]);
