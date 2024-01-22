@@ -44,7 +44,7 @@ int main()
     	cout << "\n";
 	
 	// intersection
-	for (const int& j : a)
+	for (const int &j : a)
 		if (find(b.begin(), b.end(), j) != b.end())
 			d.push_back(j);
 	
