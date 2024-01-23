@@ -18,9 +18,7 @@ int main()
 }
 
 void findDuplicate(int *a, int n)
-{		
-	int c = 0;
-	
+{
 	sort(a, a + n);		
 	 
 	for (int i = 0; i < n - 1; i++)
