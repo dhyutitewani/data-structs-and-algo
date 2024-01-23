@@ -7,7 +7,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void merge(long long*,long long*, int, int);
+void merge(long long*, long long*, int, int);
 
 int main()
 {
