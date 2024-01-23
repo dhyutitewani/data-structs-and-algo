@@ -22,7 +22,7 @@ int main()
 	return 0;
 }
 
-void merge(long long *a, long long *b,int n,int m)
+void merge(long long *a, long long *b, int n, int m)
 {
 	int left = n - 1;
 	int right = 0;
@@ -44,13 +44,13 @@ void merge(long long *a, long long *b,int n,int m)
 	
 	// display arr a
 	cout << "a: ";
-    for (int i = 0; i < n; i++)
-	   	cout << *(a + i) << " ";
-    cout << "\n";
+    	for (int i = 0; i < n; i++)
+		cout << *(a + i) << " ";
+    	cout << "\n";
  
-    // display arr b
-    cout << "b: ";
-    for (int j = 0; j < m; j++)
+    	// display arr b
+    	cout << "b: ";
+    	for (int j = 0; j < m; j++)
 	   	cout << *(b + j) << " ";
-    cout << "\n";
+    	cout << "\n";
 }
