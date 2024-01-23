@@ -3,7 +3,7 @@
  *
  * Process: Solve using vector insert and find fnc. 
  *
- *	    Define three vectors a, b and c.
+ *	    Define vectors a, b and c.
  * 	    
  *	    Find union	     : Use insert to add the values of
  *			       a and b to c. 
@@ -17,7 +17,7 @@
  *	    - Time complexity : theta(n^2) // to be checked
  *	    - Space complexity: O(m+n) // to be checked
  * 
- * Use STL for sort.
+ * Use  STL for sort.
  */
 
 #include<bits/stdc++.h>

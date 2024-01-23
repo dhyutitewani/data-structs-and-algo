@@ -45,7 +45,7 @@ int maxSum(int *a, int n)
 		if (max_sum < curr_sum)
 		{
 			max_sum = curr_sum;
-			s = 1;
+			s = s;
 			e = i;
 		}	
 		
