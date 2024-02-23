@@ -129,12 +129,12 @@ int main() {
 
 			case 2:
 			   	cout << "enter val: ";
-                cin >> v;
+                		cin >> v;
                
 			   	list.insert(v);
 
 				cout << endl;
-                break;
+                		break;
 
 			case 3:
 				cout << "enter val to be deleted: ";
