@@ -88,8 +88,8 @@ class LL {
 			
 			// searching for node
 			Node *temp = head;
-			while (temp->next != nullptr && temp->next->data != val) {		// traversing to one node before node
-				temp = temp->next;											// that is to be deleted
+			while (temp->next != nullptr && temp->next->data != val) {	// traversing to one node before node
+				temp = temp->next;					
 			}
 			
 			// deleting the last node
@@ -104,8 +104,8 @@ class LL {
 			}
 			
 			Node *nextNode = temp->next->next;			// store next node
-			delete temp->next;							// delete node after curr node
-			temp->next = nextNode;						// update curr node's next pos
+			delete temp->next;					// delete node after curr node
+			temp->next = nextNode;					// update curr node's next pos
 		}	
 };
 
