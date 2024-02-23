@@ -216,7 +216,7 @@ int main() {
 				break;
 
 			case 5:
-                cout << "enter curr val: ";
+                		cout << "enter curr val: ";
 				cin >> v;
 
 				cout << "enter new val: ";
@@ -225,7 +225,7 @@ int main() {
 				list.replace(v, nv);
 
 			   	cout << endl;
-                break;
+                		break;
 
 			case 6:
 				exit(0);
