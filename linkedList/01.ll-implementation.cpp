@@ -86,9 +86,10 @@ class LL {
 				return;
 			}
 			
-			// searching for node
 			Node *temp = head;
-			while (temp->next != nullptr && temp->next->data != val) {	// traversing to one node before node
+			
+			// traversing to one node before node
+			while (temp->next != nullptr && temp->next->data != val) {	
 				temp = temp->next;					
 			}
 			
