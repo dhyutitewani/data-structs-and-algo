@@ -176,7 +176,7 @@ class LL {
 
 			while (curr != nullptr) {
 				nextNode = curr->next;			// think of flipping ptr of ll
-				curr->next = prev;			// curr->next now point to prev [flipped arrow]
+				curr->next = prev;			// curr->next now points to prev [flipped arrow]
 				prev = curr;				// curr node becomes previous
 				curr = nextNode; 			// curr moves to the next node
 			}
