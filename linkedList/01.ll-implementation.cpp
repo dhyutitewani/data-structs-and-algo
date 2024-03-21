@@ -140,10 +140,10 @@ class LL {
 				return;
 			}
 			
-			Node *nextNode = temp->next->next;			// store next node
+			Node *nextNode = temp->next->next;		// store next node
 			
-			delete temp->next;					// delete node after curr node
-			temp->next = nextNode;					// update curr node's next pos
+			delete temp->next;				// delete node after curr node
+			temp->next = nextNode;				// update curr node's next pos
 		}	
 
 		void replace(int val, int nval) {
@@ -175,10 +175,10 @@ class LL {
 				cout << "empty list" << endl;
 
 			while (curr != nullptr) {
-				nextNode = curr->next;				// think of flipping ptr of ll
-				curr->next = prev;					// curr->next will now point to prev
-				prev = curr;						// curr node becomes previous
-				curr = nextNode; 					// curr moves to the next node
+				nextNode = curr->next;			// think of flipping ptr of ll
+				curr->next = prev;			// curr->next now point to prev [flipped arrow]
+				prev = curr;				// curr node becomes previous
+				curr = nextNode; 			// curr moves to the next node
 			}
 
 			head = prev;
