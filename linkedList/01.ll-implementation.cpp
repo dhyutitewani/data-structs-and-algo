@@ -4,10 +4,11 @@
  * Process: Implemented using classes.
  *
  * 		    Operations to be performed:
- * 		    - Insertion
- * 		    - Deletion
- * 		    - Searching
- * 		    - Sorting
+ * 		    - Insert
+ * 		    - Delete
+ * 		    - Search
+ * 		    - Sort
+ * 		    - Reverse
  */
 
 #include <cstdlib>
@@ -164,6 +165,30 @@ class LL {
 		
 			temp->next->data = nval;
 		}
+
+		void reverse() {
+			Node *curr = head;
+			Node *prev = nullptr;
+			Node *nextNode;
+
+			if (head == nullptr)
+				cout << "empty list" << endl;
+
+			while (curr != nullptr) {
+				nextNode = curr->next;				// think of flipping ptr of ll
+				curr->next = prev;					// curr->next will now point to prev
+				prev = curr;						// curr node becomes previous
+				curr = nextNode; 					// curr moves to the next node
+			}
+
+			head = prev;
+			
+			Node *temp = head;
+			while (temp != nullptr) {
+				cout << temp->data << " ";
+				temp = temp->next;
+			}
+		}
 };
 
 int main() {
@@ -174,7 +199,7 @@ int main() {
 	while (true) {
 		cout << "operation to be performed on linked list" << endl;
 		cout << "1. display  2. insert  3. insert at any position" << endl;
-		cout << "4. delete  5. replace  6. exit" << endl;
+		cout << "4. delete  5. replace  6. reverse  7. exit" << endl;
 		cin >> c;	
 		cout << endl;
 
@@ -226,8 +251,15 @@ int main() {
 
 			   	cout << endl;
                 		break;
-
 			case 6:
+				cout << "reversed linked list: ";
+				
+				list.reverse();
+
+				cout << endl;
+				break;
+							
+			case 7:
 				exit(0);
 				break;
 
