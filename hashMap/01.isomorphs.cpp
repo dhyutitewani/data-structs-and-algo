@@ -21,14 +21,16 @@ int isomorph(string a, string b) {
 }
 
 int main() {
-	string a = "aab", b = "xxy";
-
+	string a = "aab";
+	string b = "xxy";
+	
 	if (a.length() != b.length()) return false; 
 	
-	if(isomorph(a, b)) 
+	if(isomorph(a, b)) {
 		cout << "true" << endl;
-	else 
+	} else {
 		cout << "false" << endl;
-
+	}
+	
 	return 0;
 }
