@@ -19,8 +19,7 @@ int main()
 
 int algo(int *a, int n)
 {
-	int max_sum = 0, curr_sum = 0;
-	int s = 0, e = 0;
+	int max_sum = INT_MIN, curr_sum = 0;
 
 	for (int i = 0; i < n; i++)
 	{
