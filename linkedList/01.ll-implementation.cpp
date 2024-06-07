@@ -115,22 +115,22 @@ class LL {
                 return;
             }
 			
-			// traversing to one node before node
+	    // traversing to one node before node
             Node *temp = head;
             while (temp->next != nullptr && temp->next->data != val) {
                 temp = temp->next;
             }
 			
-			// deleting last node
+	    // deleting last node
             if (temp->next == nullptr) {
                 cout << "node not found" << endl;
                 return;
             }
 
-            Node *nextNode = temp->next->next;						// stores next node
+            Node *nextNode = temp->next->next;					// stores next node
 
-            delete temp->next;										// delete node after curr node
-            temp->next = nextNode;									// update curr node's next pos
+            delete temp->next;							// delete node after curr node
+            temp->next = nextNode;						// update curr node's next pos
         }
 
         void replace(int val, int nval) {
@@ -164,10 +164,10 @@ class LL {
             }
 
             while (curr != nullptr) {
-                nextNode = curr->next;								// think of flipping ptr of ll
-                curr->next = prev;									// curr->next now points to prev [flipped arrow]
-                prev = curr;										// curr nodes becomes previous
-                curr = nextNode;									// curr moves to next node
+                nextNode = curr->next;						// think of flipping ptr of ll
+                curr->next = prev;						// curr->next now points to prev [flipped arrow]
+                prev = curr;							// curr nodes becomes previous
+                curr = nextNode;						// curr moves to next node
             }
 
             head = prev;
