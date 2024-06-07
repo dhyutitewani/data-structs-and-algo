@@ -1,3 +1,7 @@
+/*
+ *	1. Plaindrome using ll and stack
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 

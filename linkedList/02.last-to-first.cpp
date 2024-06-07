@@ -1,5 +1,5 @@
 /*
- *	4. Move last element to the first
+ *	2. Move last element to the first
  */
 
 #include <bits/stdc++.h>
