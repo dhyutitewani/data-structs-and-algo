@@ -10,9 +10,8 @@ int isomorph(string a, string b) {
 		char c2 = b[i];
 
 		if (hmap.find(c1) != hmap.end()) {
-			if (hmap[c1] != c2) {
+			if (hmap[c1] != c2)
 				return false;
-			}	
 		} else {
 			hmap[c1] = c2;	
 		}
