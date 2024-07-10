@@ -41,10 +41,7 @@ int main()
     cout << "Following is Depth First Traversal"
             " (starting from vertex 2) \n";
 
-    // Function call
     g.DFS(2);
 
     return 0;
 }
-
-// improved by Vishnudev C
